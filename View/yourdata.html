@@ -1,0 +1,58 @@
+ <style>
+        body {
+            background-color: #1E2A36;
+            margin: 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+            gap: 15px; 
+        }
+
+        .update-button {
+            color: black;
+            font-weight: bold;
+            padding: 10px 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            background-color: #50fa7b;
+        }
+
+        .update-button:hover {
+            background-color: #40d97a;
+        }
+	
+</style>
+
+<div class="form">
+<form>
+	<label for="birthday" style="color:#FFFFFF;font-family:'Inter', sans-serif;font-size:17px;"
+    ><strong>Birthday</strong></label>
+  	<input type="date" id="birthday" name="birthday" 
+    style="background-color: #2b3530;border:0px;color:#FFFFFF;font-weight: bold;" readonly>
+    <label for="height" style="color:#FFFFFF;font-family:'Inter', sans-serif;font-size:17px;"
+    ><strong>Height (in cm)</strong></label>
+    <input type="number" id="height"
+     style="background-color: #2b3530;border:0px;color:#FFFFFF;font-weight: bold;" name="height" readonly>
+    <label for="weight" style="color:#FFFFFF;font-family:'Inter', sans-serif;font-size:17px;">
+        <strong>Weight (in kg)</strong></label>
+    <input type="number" id="weight" name="weight"
+     style="background-color: #2b3530;border:0px;color:#FFFFFF;font-weight: bold;" readonly>
+	<label for="health" style="color: #FFFFFF;font-family:'Inter', sans-serif; font-size:17px;">
+        <strong>Health issues</strong></label>
+	<input type="text" id="health" name="health" 
+    style="background-color: #2b3530;border:0px;color:#FFFFFF;font-weight: bold;" readonly>
+	<label for="gender" style="color: #FFFFFF;font-family:'Inter', sans-serif; font-size:17px;">
+        <strong>Gender</strong></label>
+	<input type="text" id="gender" name="gender" 
+    style="background-color: #2b3530;border:0px;color:#FFFFFF;font-weight: bold;" readonly>	
+    <button type="button" class="update-button" onclick="update()">Update</button>
+</form>      
+</div>
+
+

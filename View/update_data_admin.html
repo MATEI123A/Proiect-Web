@@ -1,0 +1,61 @@
+ <style>
+        body {
+            background-color: #1E2A36;
+            margin: 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          
+            gap: 15px; 
+        }
+
+        input[type="submit"]{
+            color: black;
+            font-weight: bold;
+            padding: 10px 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            background-color: #50fa7b;
+        }
+
+        .back-button {
+            color: black;
+            font-weight: bold;
+            padding: 10px 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            background-color:#811331;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #40d97a;
+        }
+
+        .back-button:hover {
+            background-color: #8B0000;
+        }
+	
+</style>
+
+<div class="form">
+<form method="POST" action="../Model/user_update_data_admin.php">
+
+    <label for="weight" style="color:#FFFFFF;font-family:'Inter', sans-serif;font-size:17px;"><strong>Weight</strong></label>
+    <input type="text" id="weight" name="weight" 
+    style="background-color: #2b3530;border:0px;color:#FFFFFF;font-weight: bold;font-size:16px;" required>
+
+    <label for="height" style="color:#FFFFFF;font-family:'Inter', sans-serif;font-size:17px;"><strong>Height</strong></label>
+    <input type="text" id="height" name="height" 
+    style="background-color: #2b3530;border:0px;color:#FFFFFF;font-weight: bold;font-size:16px;" required>
+
+	<input type="submit" value="Submit">
+    <button type="button" class="back-button" onclick="back_edit()"><strong>Back</strong></button>
+</form>      
+</div>

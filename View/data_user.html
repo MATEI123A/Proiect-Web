@@ -1,0 +1,85 @@
+<style>
+    body {
+        background-color: #1d2033;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+   
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .back-button {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    button:hover {
+        background-color: #2a2f4a;
+        transform: scale(1.05);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+
+    input[type="submit"]:hover {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+        transform: scale(1.05);
+    }
+
+    label {
+        color: white;
+        padding: 10px;
+    }
+
+    input {
+        margin-bottom: 10px;
+        padding: 8px;
+        width: 200px;
+    }
+
+    input[type="submit"] {
+        height: 30px;
+        width: 100px;
+        margin-top: 20px;
+        color: black;
+        font-weight: bold;
+        padding: 5px 5px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #50fa7b;
+    }
+</style>
+
+<form method="POST" action="../Model/user_info.php">
+	<label for="gender"> Gender </label>
+        <select name="gender" id="gender" style="background-color: #2b3530;border:0px;color:#FFFFFF;font-weight: bold;">
+            <option value="male"> Male </option>
+            <option value="female"> Female </option>
+        </select>
+		
+	<label for="date" style="color:#FFFFFF;font-family:'Inter', sans-serif;font-size:17px;"><strong>Birthday</strong></label> <br>
+    <input type="date" id="date" name="date"
+    style="background-color: #2b3530;border:0px;color:#FFFFFF;font-weight: bold;" required> <br>
+
+    <label for="weight" style="color:#FFFFFF;font-family:'Inter', sans-serif;font-size:17px;">Weight (between 40 and 100):</label>
+    <input type="number" id="weight" name="weight"
+    style="background-color: #2b3530;border:0px;color:#FFFFFF;font-weight: bold;" min="40" max="100" required>
+
+    <label for="height" style="color:#FFFFFF;font-family:'Inter', sans-serif;font-size:17px;">Height (between 130 and 200):</label>
+    <input type="number" id="height" name="height"
+    style="background-color: #2b3530;border:0px;color:#FFFFFF;font-weight: bold;" min="130" max="200" required>
+
+    <label for="health" style="color:#FFFFFF;font-family:'Inter', sans-serif;font-size:17px;"> Do you have any health problems? </label>
+        <select name="health" id="health" style="background-color: #2b3530;border:0px;color:#FFFFFF;font-weight: bold;">
+            <option value="healthy"> No, I am in good health </option>
+            <option value="minor"> I have some minor health issues </option>
+            <option value="serious"> I have serious health issues </option> 
+        </select>
+	<input type="submit" value="Submit">
+</form>

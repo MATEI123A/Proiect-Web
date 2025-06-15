@@ -1,0 +1,46 @@
+ <style>
+        body {
+            background-color: #1E2A36;
+            margin: 0;
+        }
+
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+            gap: 15px; 
+        }
+
+        .logout-button {
+            color: black;
+            font-weight: bold;
+            padding: 10px 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            background-color: #50fa7b;
+        }
+
+        .logout-button:hover {
+            background-color: #40d97a;
+        }
+	
+</style>
+
+<div class="form">
+<form >
+	<label for="points" style="color:#FFFFFF;font-family:'Inter', sans-serif;font-size:17px;"><strong>Points collected</strong></label>
+    <input type="text" id="points" name="points"
+    style="background-color: #2b3530;border:0px;color:#FFFFFF;font-weight: bold;font-size:16px;" readonly>
+    <label for="user" style="color:#FFFFFF;font-family:'Inter', sans-serif;font-size:17px;"><strong>Username</strong></label>
+    <input type="text" id="user" name="user"
+    style="background-color: #2b3530;border:0px;color:#FFFFFF;font-weight: bold;font-size:16px;" readonly>
+    <label for="email" style="color:#FFFFFF;font-family:'Inter', sans-serif;font-size:17px;"><strong>Email</strong></label>
+    <input type="email" id="email" name="email" 
+    style="background-color: #2b3530;border:0px;color:#FFFFFF;font-weight: bold;font-size:16px;" readonly>
+	<button type="button" class="logout-button" onclick="logout()" class="logout"><strong>Log out</strong></button>
+</form>      
+</div>
