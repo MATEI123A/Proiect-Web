@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <title>Update</title>
+    <link rel="stylesheet" href="../CSS/update_data_admin.css"> 
+</head>
+
+<div class="form">
+<form method="POST" action="../../Model/user_update_data_admin.php">
+
+    <label for="weight" style="color:#FFFFFF;font-family:'Inter', sans-serif;font-size:17px;"><strong>Weight</strong></label>
+    <input type="text" id="weight" name="weight" 
+    style="background-color: #2b3530;border:0px;color:#FFFFFF;font-weight: bold;font-size:16px;" required>
+
+    <label for="height" style="color:#FFFFFF;font-family:'Inter', sans-serif;font-size:17px;"><strong>Height</strong></label>
+    <input type="text" id="height" name="height" 
+    style="background-color: #2b3530;border:0px;color:#FFFFFF;font-weight: bold;font-size:16px;" required>
+
+    <label for="preference" style="color:#FFFFFF;font-family:'Inter', sans-serif;font-size:17px;" ><strong>Choose location</strong></label>
+        <select name="preference" id="preference" style="background-color: #2b3530;border:0px;color:#FFFFFF;font-weight: bold;">
+            <option value="gym">Gym</option>
+            <option value="home"> Home </option>
+            <option value="calisthenics"> Calisthenics </option> 
+        </select>
+
+	<input type="submit" value="Submit">
+    <button type="button" class="back-button" onclick="back_edit()"><strong>Back</strong></button>
+</form>      
+</div>
+</html>

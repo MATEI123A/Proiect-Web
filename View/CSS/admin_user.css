@@ -1,0 +1,42 @@
+ body {
+            background-color: #1E2A36;
+            margin: 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          
+            gap: 15px; 
+        }
+
+        .logout-button {
+            color: black;
+            font-weight: bold;
+            padding: 10px 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            background-color: #50fa7b;
+        }
+
+        .delete-button {
+            color: black;
+            font-weight: bold;
+            padding: 10px 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            background-color:#811331;
+        }
+
+        .logout-button:hover {
+            background-color: #40d97a;
+        }
+
+        .delete-button:hover {
+            background-color: #8B0000;
+        }

@@ -1,0 +1,552 @@
+{
+  "healthy": {
+    "gym": {
+      "push": [
+        {
+          "name": "Bench Press",
+          "description": "Exercices for chest and triceps. Do 4 series with 10 reps.",
+          "link": "https://www.youtube.com/watch?v=4Y2ZdHCOXok&ab_channel=JeremyEthier"
+        },
+        {
+          "name": "Shoulder Press",
+          "description": "It is a very good exercice for shoulders. Do 4 series with 10 reps.",
+          "link": "https://www.youtube.com/watch?v=poD_-zaG9hk&ab_channel=NuffieldHealth"
+        },
+        {
+          "name": "Dips",
+          "description": "Very good for chest and triceps.Its a bodyweight exercise. Do 3-4 series with 10 reps.",
+          "link": "https://www.youtube.com/watch?v=oA8Sxv2WeOs&ab_channel=nutritioneering"
+        }
+      ],
+      "pull": [
+        {
+          "name": "Lat Pulldown",
+          "description": "Pull the bar towards your chest for latissimus dorsi.",
+          "link": "https://www.youtube.com/watch?v=JGeRYIZdojU&ab_channel=PureGym"
+        },
+        {
+          "name": "Barbell Row",
+          "description": "Exercise for lower back.",
+          "link": "https://www.youtube.com/watch?v=kBWAon7ItDw&ab_channel=JeremyEthier"
+        },
+        {
+          "name": "Pull-ups",
+          "description": "Best exercise ever for back.",
+          "link": "https://www.youtube.com/watch?v=3YvfRx31xDE&ab_channel=JeremyEthier"
+        }
+      ],
+      "abs": [
+        {
+          "name": "Cable Crunch",
+          "description": "Abdominal flexion using a pulley.",
+          "link": "https://www.youtube.com/watch?v=6GMKPQVERzw&ab_channel=RenaissancePeriodization"
+        },
+        {
+          "name": "Leg Raise",
+          "description": "Leg raises for abs.",
+          "link": "https://www.youtube.com/watch?v=_jLskVdzS4o&ab_channel=TheMovementCollective"
+        },
+        {
+          "name": "Russian Twist",
+          "description": "Body rotations for obliques.",
+          "link": "https://www.youtube.com/watch?v=9V9csctSKj0&t=29s&ab_channel=FitFatherProject-FitnessForBusyFathers"
+        }
+      ],
+      "legs": [
+        {
+          "name": "Squat",
+          "description": "Squats.",
+          "link": "https://www.youtube.com/watch?v=gcNh17Ckjgg&ab_channel=JeremyEthier"
+        },
+        {
+          "name": "Leg Press",
+          "description": "Leg push-up exercise for quadriceps.",
+          "link":"https://www.youtube.com/watch?v=VFk3RzndUEc&ab_channel=TriCitiesGold%27sGym"
+        },
+        {
+          "name": "Lunges",
+          "description": "Lunges for glutes and legs.",
+          "link": "https://www.youtube.com/watch?v=wrwwXE_x-pQ&ab_channel=MindBodySoul"
+        }
+      ]
+    },
+    "calisthenics": {
+      "push": [
+        {
+          "name": "Push-ups",
+          "description": "Best exerice for chest and triceps.",
+          "link": "https://www.youtube.com/watch?v=IODxDxX7oi4&ab_channel=Calisthenicmovement"
+        },
+        {
+          "name": "Handstand Push-ups",
+          "description": "Advanced push-ups especially for shoulders.",
+          "link": "https://www.youtube.com/watch?v=h0HjqYRlXYg&ab_channel=Calisthenicmovement"
+        },
+        {
+          "name": "Dips",
+          "description": "Very good for chest and triceps.Its a bodyweight exercise. Do 3-4 series with 10 reps.",
+          "link": "https://www.youtube.com/watch?v=oA8Sxv2WeOs&ab_channel=nutritioneering"
+        }
+      ],
+      "pull": [
+        {
+          "name": "Pull-ups",
+          "description": "Number one exercise for back and biceps.",
+          "link": "https://www.youtube.com/watch?v=JGeRYIZdojU&ab_channel=PureGym"
+        },
+        {
+          "name": "Chin-ups",
+          "description": "Pull ups for biceps.",
+          "link": "https://www.youtube.com/watch?v=e1YSApl-QcM&ab_channel=SimonsterStrength"
+        },
+        {
+          "name": "Australian Pull-ups",
+          "description": "Pull ups for beginners.",
+          "link": "https://www.youtube.com/watch?v=UaTnPqbK9ZA&ab_channel=CalisthenicsTutorials"
+        }
+      ],
+      "abs": [
+        {
+          "name": "Plank",
+          "description": "Isometric exercise for median part.",
+          "link": "https://www.youtube.com/watch?v=kL_NJAkCQBg&t=113s&ab_channel=Calisthenicmovement"
+        },
+        {
+          "name": "Hanging Leg Raise",
+          "description": "Leg raises for abs",
+          "link": "https://www.youtube.com/watch?v=_jLskVdzS4o&ab_channel=TheMovementCollective"
+        },
+        {
+          "name": "V-Ups",
+          "description": "Simultaneous arm and leg raises for the abdomen.",
+          "link": "https://www.youtube.com/watch?v=iP2fjvG0g3w&ab_channel=XHITDaily"
+        }
+      ],
+      "legs": [
+        {
+          "name": "Jump Squats",
+          "description": "Jumping Squats for Strength and Cardio.",
+          "link": "https://www.youtube.com/watch?v=BRfxI2Es2lE&ab_channel=PureGym"
+        },
+        {
+          "name": "Pistol Squats",
+          "description": "Single-leg squats for balance and strength.",
+          "link": "https://www.youtube.com/watch?v=vq5-vdgJc0I&ab_channel=SquatUniversity"
+        },
+        {
+          "name": "Lunges",
+          "description": "Lunges for thighs and buttocks.",
+          "link": "https://www.youtube.com/watch?v=wrwwXE_x-pQ&ab_channel=MindBodySoul"
+        }
+      ]
+    },
+    "home": {
+      "push": [
+        {
+          "name": "Incline Push-ups",
+          "description": "Incline push-ups for the upper chest.",
+          "link": "https://www.youtube.com/watch?v=cfns5VDVVvk&ab_channel=TrainWithAdby-PersonalTrainingGym"
+        },
+        {
+          "name": "Wall Push-ups",
+          "description": "Easy wall push-ups.",
+          "link": "https://www.youtube.com/watch?v=3OM4y5rXM8c&ab_channel=CHAHealthcare"
+        },
+        {
+          "name": "Chair Dips",
+          "description": "Dips using a triceps chair.",
+          "link": "https://www.youtube.com/watch?v=l8I0jDfFxkM&ab_channel=EbuniLouiseFitness"
+        }
+      ],
+      "pull": [
+        {
+          "name": "Doorway Rows",
+          "description": "Light pulls using the door frame.",
+          "link": "https://www.youtube.com/watch?v=uSst0ilMoiY&ab_channel=FitnessforProfessionals"
+        },
+        {
+          "name": "Towel Curls",
+          "description": "Towel bicep curls.",
+          "link": "https://www.youtube.com/watch?v=p8z4fhUWhP4&ab_channel=Mike%7CJ2FITStrength%26Conditioning"
+        }
+      ],
+      "abs": [
+        {
+          "name": "Crunches",
+          "description": "Abdominal flexes.",
+          "link": "https://www.youtube.com/watch?v=Xyd_fa5zoEU"
+        },
+        {
+          "name": "Plank",
+          "description": "Trunk stabilization exercise.",
+          "link": "https://www.youtube.com/watch?v=B296mZDhrP4"
+        },
+        {
+          "name": "Bicycle Crunches",
+          "description": "Exercise for the upper abdomen and obliques.",
+          "link": "https://www.youtube.com/watch?v=9FGilxCbdz8"
+        }
+      ],
+      "legs": [
+        {
+          "name": "Bodyweight Squats",
+          "description": "Weightless squats.",
+          "link": "https://www.youtube.com/watch?v=aclHkVaku9U"
+        },
+        {
+          "name": "Wall Sit",
+          "description": "Isometric exercise for thighs.",
+          "link": "https://www.youtube.com/watch?v=-cdph8hv0O0"
+        },
+        {
+          "name": "Calf Raises",
+          "description": "Calf raises.",
+          "link": "https://www.youtube.com/watch?v=-M4-G8p8fmc"
+        }
+      ]
+    }
+  },
+  
+  "minor": {
+    "gym": {
+      "push": [
+        {
+          "name": "Bench Press",
+          "description": "Exercices for chest and triceps. Do 4 series with 10 reps.",
+          "link": "https://www.youtube.com/watch?v=4Y2ZdHCOXok&ab_channel=JeremyEthier"
+        },
+        {
+          "name": "Shoulder Press",
+          "description": "It is a very good exercice for shoulders. Do 4 series with 10 reps.",
+          "link": "https://www.youtube.com/watch?v=poD_-zaG9hk&ab_channel=NuffieldHealth"
+        },
+        {
+          "name": "Dips",
+          "description": "Very good for chest and triceps.Its a bodyweight exercise. Do 3-4 series with 10 reps.",
+          "link": "https://www.youtube.com/watch?v=oA8Sxv2WeOs&ab_channel=nutritioneering"
+        }
+      ],
+      "pull": [
+        {
+          "name": "Lat Pulldown",
+          "description": "Pull the bar towards your chest for latissimus dorsi.",
+          "link": "https://www.youtube.com/watch?v=JGeRYIZdojU&ab_channel=PureGym"
+        },
+        {
+          "name": "Pull-ups",
+          "description": "Best exercise ever for back.",
+          "link": "https://www.youtube.com/watch?v=3YvfRx31xDE&ab_channel=JeremyEthier"
+        }
+      ],
+      "abs": [
+        {
+          "name": "Leg Raise",
+          "description": "Leg raises for abs.",
+          "link": "https://www.youtube.com/watch?v=_jLskVdzS4o&ab_channel=TheMovementCollective"
+        },
+        {
+          "name": "Russian Twist",
+          "description": "Body rotations for obliques.",
+          "link": "https://www.youtube.com/watch?v=9V9csctSKj0&t=29s&ab_channel=FitFatherProject-FitnessForBusyFathers"
+        }
+      ],
+      "legs": [
+        {
+          "name": "Squat",
+          "description": "Squats.",
+          "link": "https://www.youtube.com/watch?v=gcNh17Ckjgg&ab_channel=JeremyEthier"
+        },
+        {
+          "name": "Lunges",
+          "description": "Lunges for glutes and legs.",
+          "link": "https://www.youtube.com/watch?v=wrwwXE_x-pQ&ab_channel=MindBodySoul"
+        }
+      ]
+    },
+    "calisthenics": {
+      "push": [
+        {
+          "name": "Push-ups",
+          "description": "Best exerice for chest and triceps.",
+          "link": "https://www.youtube.com/watch?v=IODxDxX7oi4&ab_channel=Calisthenicmovement"
+        },
+        {
+          "name": "Dips",
+          "description": "Very good for chest and triceps.Its a bodyweight exercise. Do 3-4 series with 10 reps.",
+          "link": "https://www.youtube.com/watch?v=oA8Sxv2WeOs&ab_channel=nutritioneering"
+        }
+      ],
+      "pull": [
+        {
+          "name": "Pull-ups",
+          "description": "Number one exercise for back and biceps.",
+          "link": "https://www.youtube.com/watch?v=Y3ntNsIS2Q8&ab_channel=FitnessFAQs"
+        },
+        {
+          "name": "Chin-ups",
+          "description": "Pull ups for biceps.",
+          "link": "https://www.youtube.com/watch?v=e1YSApl-QcM&ab_channel=SimonsterStrength"
+        },
+        {
+          "name": "Australian Pull-ups",
+          "description": "Pull ups for beginners.",
+          "link": "https://www.youtube.com/watch?v=UaTnPqbK9ZA&ab_channel=CalisthenicsTutorials"
+        }
+      ],
+      "abs": [
+        {
+          "name": "Plank",
+          "description": "Isometric exercise for median part.",
+          "link": "https://www.youtube.com/watch?v=kL_NJAkCQBg&t=113s&ab_channel=Calisthenicmovement"
+        },
+        {
+          "name": "Hanging Leg Raise",
+          "description": "Leg raises for abs",
+          "link": "https://www.youtube.com/watch?v=_jLskVdzS4o&ab_channel=TheMovementCollective"
+        }
+      ],
+      "legs": [
+        {
+          "name": "Jump Squats",
+          "description": "Jumping Squats for Strength and Cardio.",
+          "link": "https://www.youtube.com/watch?v=BRfxI2Es2lE&ab_channel=PureGym"
+        },
+        {
+          "name": "Lunges",
+          "description": "Lunges for thighs and buttocks.",
+          "link": "https://www.youtube.com/watch?v=wrwwXE_x-pQ&ab_channel=MindBodySoul"
+        }
+      ]
+    },
+    "home": {
+      "push": [
+        {
+          "name": "Incline Push-ups",
+          "description": "Incline push-ups for the upper chest.",
+          "link": "https://www.youtube.com/watch?v=cfns5VDVVvk&ab_channel=TrainWithAdby-PersonalTrainingGym"
+        },
+        {
+          "name": "Wall Push-ups",
+          "description": "Easy wall push-ups.",
+          "link": "https://www.youtube.com/watch?v=3OM4y5rXM8c&ab_channel=CHAHealthcare"
+        },
+        {
+          "name": "Chair Dips",
+          "description": "Dips using a triceps chair.",
+          "link": "https://www.youtube.com/watch?v=l8I0jDfFxkM&ab_channel=EbuniLouiseFitness"
+        }
+      ],
+      "pull": [
+        {
+          "name": "Doorway Rows",
+          "description": "Light pulls using the door frame.",
+          "link": "https://www.youtube.com/watch?v=uSst0ilMoiY&ab_channel=FitnessforProfessionals"
+        },
+        {
+          "name": "Towel Curls",
+          "description": "Towel bicep curls.",
+          "link": "https://www.youtube.com/watch?v=p8z4fhUWhP4&ab_channel=Mike%7CJ2FITStrength%26Conditioning"
+        }
+      ],
+      "abs": [
+        {
+          "name": "Crunches",
+          "description": "Abdominal flexes.",
+          "link": "https://www.youtube.com/watch?v=Xyd_fa5zoEU"
+        },
+        {
+          "name": "Plank",
+          "description": "Trunk stabilization exercise.",
+          "link": "https://www.youtube.com/watch?v=B296mZDhrP4"
+        },
+        {
+          "name": "Bicycle Crunches",
+          "description": "Exercise for the upper abdomen and obliques.",
+          "link": "https://www.youtube.com/watch?v=9FGilxCbdz8"
+        }
+      ],
+      "legs": [
+        {
+          "name": "Bodyweight Squats",
+          "description": "Weightless squats.",
+          "link": "https://www.youtube.com/watch?v=aclHkVaku9U"
+        },
+        {
+          "name": "Wall Sit",
+          "description": "Isometric exercise for thighs.",
+          "link": "https://www.youtube.com/watch?v=-cdph8hv0O0"
+        },
+        {
+          "name": "Calf Raises",
+          "description": "Calf raises.",
+          "link": "https://www.youtube.com/watch?v=-M4-G8p8fmc"
+        }
+      ]
+    }
+  },
+  
+  "serious": {
+    "gym": {
+      "push": [
+        {
+          "name": "Exercise for mobility",
+          "description": "Increase strenght and mobility in your shoulder joint.",
+          "link": "https://www.youtube.com/watch?v=u9xEU87qXwk&ab_channel=TOPKINETO%7CKinetoterapieIasi%7CFizioterapieIasi"
+        },
+        {
+          "name": "Exercises if you are injured at shoulders",
+          "description": "Exercises combined with kinesio taping suppor.",
+          "link": "https://www.youtube.com/watch?v=9RiZDr40iEw&ab_channel=TOPKINETO%7CKinetoterapieIasi%7CFizioterapieIasi"
+        }
+        
+      ],
+      "pull": [
+        {
+          "name": "Lat Pulldown",
+          "description": "Pull the bar towards your chest for latissimus dorsi.",
+          "link": "https://www.youtube.com/watch?v=JGeRYIZdojU&ab_channel=PureGym"
+        },
+        {
+          "name": "Pull-ups",
+          "description": "Best exercise ever for back.",
+          "link": "https://www.youtube.com/watch?v=3YvfRx31xDE&ab_channel=JeremyEthier"
+        }
+      ],
+      "abs": [
+        {
+          "name": "Leg Raise",
+          "description": "Leg raises for abs.",
+          "link": "https://www.youtube.com/watch?v=_jLskVdzS4o&ab_channel=TheMovementCollective"
+        },
+        {
+          "name": "Russian Twist",
+          "description": "Body rotations for obliques.",
+          "link": "https://www.youtube.com/watch?v=9V9csctSKj0&t=29s&ab_channel=FitFatherProject-FitnessForBusyFathers"
+        }
+      ],
+      "legs": [
+        {
+          "name": "For activation",
+          "description": "Rehab exercises.",
+          "link": "https://www.youtube.com/watch?v=M8u5lbP4f4g&ab_channel=PhysioREHAB"
+        },
+        
+        {
+          "name": "Lunges",
+          "description": "Lunges for glutes and legs.",
+          "link": "https://www.youtube.com/watch?v=wrwwXE_x-pQ&ab_channel=MindBodySoul"
+        }
+      ]
+    },
+    "calisthenics": {
+      "push": [
+        {
+          "name": "Push-ups",
+          "description": "Best exerice for chest and triceps.",
+          "link": "https://www.youtube.com/watch?v=IODxDxX7oi4&ab_channel=Calisthenicmovement"
+        }
+      ],
+      "pull": [
+        {
+          "name": "Pull-ups",
+          "description": "Number one exercise for back and biceps.",
+          "link": "https://www.youtube.com/watch?v=JGeRYIZdojU&ab_channel=PureGym"
+        },
+        {
+          "name": "Chin-ups",
+          "description": "Pull ups for biceps.",
+          "link": "https://www.youtube.com/watch?v=e1YSApl-QcM&ab_channel=SimonsterStrength"
+        },
+        {
+          "name": "Australian Pull-ups",
+          "description": "Pull ups for beginners.",
+          "link": "https://www.youtube.com/watch?v=UaTnPqbK9ZA&ab_channel=CalisthenicsTutorials"
+        }
+      ],
+      "abs": [
+        {
+          "name": "Plank",
+          "description": "Isometric exercise for median part.",
+          "link": "https://www.youtube.com/watch?v=kL_NJAkCQBg&t=113s&ab_channel=Calisthenicmovement"
+        },
+        {
+          "name": "Hanging Leg Raise",
+          "description": "Leg raises for abs",
+          "link": "https://www.youtube.com/watch?v=_jLskVdzS4o&ab_channel=TheMovementCollective"
+        },
+        {
+          "name": "V-Ups",
+          "description": "Simultaneous arm and leg raises for the abdomen.",
+          "link": "https://www.youtube.com/watch?v=iP2fjvG0g3w&ab_channel=XHITDaily"
+        }
+      ],
+      "legs": [
+        {
+          "name": "Jump Squats",
+          "description": "Jumping Squats for Strength and Cardio.",
+          "link": "https://www.youtube.com/watch?v=BRfxI2Es2lE&ab_channel=PureGym"
+        },
+        {
+          "name": "Lunges",
+          "description": "Lunges for thighs and buttocks.",
+          "link": "https://www.youtube.com/watch?v=wrwwXE_x-pQ&ab_channel=MindBodySoul"
+        }
+      ]
+    },
+    "home": {
+      "push": [
+        {
+          "name": "Exericise if you are injured at shoulder",
+          "description": "Exercises for Biceps Tendonitis Shoulder Pain Relief!.",
+          "link": "https://www.youtube.com/watch?v=tnvsozMv264&ab_channel=PTTimewithTim"
+        },
+        {
+          "name": "Exericise if you are injured at shoulder",
+          "description": "Exercise for Front Shoulder Pain.",
+          "link": "https://www.youtube.com/watch?v=cZgE-cQwFWI&ab_channel=BodyFixExercises"
+        }
+      ],
+      "pull": [
+        {
+          "name": "Biceps Tendonitis",
+          "description": "Biceps Tendonitis Stretches & Exercises.",
+          "link": "https://www.youtube.com/watch?v=M9-yNm0NpVc&ab_channel=AskDoctorJo"
+        },
+        {
+          "name": "Biceps Tendonitis",
+          "description": "3 Exercises to Help Bicep Tendinitis.",
+          "link": "https://www.youtube.com/watch?v=YZ2vcpvDD08&ab_channel=DocJenFit"
+        }
+      ],
+      "abs": [
+        {
+          "name": "Crunches",
+          "description": "Abdominal flexes.",
+          "link": "https://www.youtube.com/watch?v=Xyd_fa5zoEU"
+        },
+        {
+          "name": "Plank",
+          "description": "Trunk stabilization exercise.",
+          "link": "https://www.youtube.com/watch?v=B296mZDhrP4"
+        },
+        {
+          "name": "Bicycle Crunches",
+          "description": "Exercise for the upper abdomen and obliques.",
+          "link": "https://www.youtube.com/watch?v=9FGilxCbdz8"
+        }
+      ],
+      "legs": [
+        {
+          "name": "Knee exercise",
+          "description": "Exercise for knee",
+          "link": "https://www.youtube.com/watch?v=ooqJCdq0ucs&ab_channel=NortonHealthcare"
+        },
+        {
+          "name": "Calf Raises",
+          "description": "Calf raises.",
+          "link": "https://www.youtube.com/watch?v=-M4-G8p8fmc"
+        }
+      ]
+    }
+  }
+}

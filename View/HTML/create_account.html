@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <title>Clasament</title>
+    <link rel="stylesheet" href="../CSS/create_account.css"> 
+</head>
+
+<form method="POST" action="../../Model/insert.php">
+    <label for="username" style="color: #FFFFFF;"><strong>Username</strong></label>
+    <input type="text" id="username" name="username" 
+    style="background-color: #2b3530;border:0px;color:#FFFFFF;font-weight: bold;" required>
+
+    <label for="email" style="color: #FFFFFF;"><strong>Email</strong></label>
+    <input type="email" id="email" name="email"
+    style="background-color: #2b3530;border:0px;color:#FFFFFF;font-weight: bold;" required>
+
+    <label for="password" style="color: #FFFFFF;"><strong>Password</strong></label>
+    <input type="password" id="password" name="password"
+    style="background-color: #2b3530;border:0px;color:#FFFFFF;font-weight: bold;" required>
+
+    <button type="submit">Next</button>
+
+    <div class="back-button">
+        <button type="button" onclick="back()">Back</button>
+    </div>
+</form>
+
+</html>

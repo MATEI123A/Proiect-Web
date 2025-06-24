@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <title>Admin</title>
+    <link rel="stylesheet" href="../CSS/admin_user.css"> 
+</head>
+
+<div class="form">
+<form >
+    <label for="user" style="color:#FFFFFF;font-family:'Inter', sans-serif;font-size:17px;"><strong>Username</strong></label>
+    <input type="text" id="user" name="user"
+    style="background-color: #2b3530;border:0px;color:#FFFFFF;font-weight: bold;font-size:16px;" readonly>
+    <label for="email" style="color:#FFFFFF;font-family:'Inter', sans-serif;font-size:17px;"><strong>Email</strong></label>
+    <input type="email" id="email" name="email" 
+    style="background-color: #2b3530;border:0px;color:#FFFFFF;font-weight: bold;font-size:16px;" readonly>
+
+    <label for="weight" style="color:#FFFFFF;font-family:'Inter', sans-serif;font-size:17px;"><strong>Weight</strong></label>
+    <input type="text" id="weight" name="weight" 
+    style="background-color: #2b3530;border:0px;color:#FFFFFF;font-weight: bold;font-size:16px;" readonly>
+
+    <label for="height" style="color:#FFFFFF;font-family:'Inter', sans-serif;font-size:17px;"><strong>Height</strong></label>
+    <input type="text" id="height" name="height" 
+    style="background-color: #2b3530;border:0px;color:#FFFFFF;font-weight: bold;font-size:16px;" readonly>
+
+	<button type="button" class="logout-button" onclick="edit()"><strong>Edit data</strong></button>
+    <button type="button" class="delete-button" onclick="delete_account()"><strong>Delete account</strong></button>
+</form>      
+</div>
+</html>

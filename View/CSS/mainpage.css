@@ -1,0 +1,40 @@
+ body {
+            background-color: #1d2033;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            height: 100vh;
+        }
+
+        p {
+            color: white;
+            text-align: center;
+            margin-top: 70px;
+            font-size: 20px;
+        }
+
+        .button-container {
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+
+        button {
+            text-align: center;
+            color: white;
+            background-color: #141724;
+            border: none;
+            padding: 10px;
+            width: 150px;
+            height: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2a2f4a;
+            transform: scale(1.05);
+        }
