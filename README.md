@@ -17,9 +17,11 @@ Stoleriu Denis-Matei (2B3) & Cioborariu Dumitru (2B3)
 
 ## 2. Introduction
 * Database Diagram
+  
 ![database_schema](https://github.com/user-attachments/assets/a2b1c24c-da35-41f9-8baa-59f80b9e6e2c)
 
 * C4 Diagrams
+  
 ![level1diagram](https://github.com/user-attachments/assets/5920cb16-230b-445e-b4b7-71ab31379742)
 ![c4diagram](https://github.com/user-attachments/assets/9876aa47-dc63-4d71-98c6-cfeeecc83514)
 
