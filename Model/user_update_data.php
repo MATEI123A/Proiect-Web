@@ -4,14 +4,9 @@ $username = "root";
 $password = "";     
 $dbname = "utilizator";
 
-$conn = mysqli_connect($servername, $username, $password);
+$conn = mysqli_connect($servername, $username, $password,$dbname);
 if (!$conn) 
     die("Connection error: " . mysqli_connect_error());
-
-$sql = "CREATE DATABASE IF NOT EXISTS utilizator";
-mysqli_query($conn, $sql);
-
-mysqli_select_db($conn, $dbname); 
 
 if (isset($_POST['height'],$_POST['weight'],$_POST['health'],$_POST['preference'])) {
     $height = (int)$_POST['height'];
@@ -56,7 +51,7 @@ if (isset($_POST['height'],$_POST['weight'],$_POST['health'],$_POST['preference'
             $user = $row['username'];
         
         $stmt = $conn->prepare("UPDATE details SET height = ?, weight = ?, health = ?,preferences = ?
-            WHERE username = ?");
+            WHERE BINARY username = ?");
         $stmt->bind_param("iisss",$height, $weight,$health,$preference,$user);
         $stmt->execute();
         $stmt->close();

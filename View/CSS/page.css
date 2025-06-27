@@ -1,4 +1,4 @@
-  body {
+  		body {
             background-color: #1E2A36;
             margin: 0;
         }
@@ -68,13 +68,10 @@
         }
 
 		.username {
-			display: flex;
-  			flex-direction: row-reverse;
 			font-size: 17px;
 			padding: 6px 12px;
 			border-radius: 6px;
 			background-color: #2a2f4a;
-        	transform: scale(1.05);
         	box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 		}
 
@@ -164,7 +161,7 @@
 
 		.generate-button{
 			color:#FFC300;
-			font-style:bold;
+			font-weight:bold;
 		}
 
 		.generate-buton:hover{

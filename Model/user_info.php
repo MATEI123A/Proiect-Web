@@ -4,14 +4,9 @@ $username = "root";
 $password = "";     
 $dbname = "utilizator";
 
-$conn = mysqli_connect($servername, $username, $password);
+$conn = mysqli_connect($servername, $username, $password,$dbname);
 if (!$conn) 
     die("Connection error: " . mysqli_connect_error());
-
-$sql = "CREATE DATABASE IF NOT EXISTS utilizator";
-mysqli_query($conn, $sql);
-
-mysqli_select_db($conn, $dbname); 
 
 if (isset($_POST['gender'],$_POST['height'],$_POST['weight'],$_POST['health'],$_POST['date'],$_POST['preference'])) {
     $gender = trim($_POST['gender']);
@@ -66,7 +61,7 @@ if (isset($_POST['gender'],$_POST['height'],$_POST['weight'],$_POST['health'],$_
             $user = $row['username'];
         
         $stmt = $conn->prepare("UPDATE details SET gender = ?, height = ?, weight = ?, health = ?, birthday = ?,
-            preferences = ? WHERE username = ?");
+            preferences = ? WHERE BINARY username = ?");
         $stmt->bind_param("siissss", $gender, $height, $weight,$health,$date,$preference,$user);
         $stmt->execute();
         $stmt->close();
@@ -77,6 +72,7 @@ if (isset($_POST['gender'],$_POST['height'],$_POST['weight'],$_POST['health'],$_
             $user = $row['username'];
             $email= $row['email'];
         }
+
         
         if($user=="Admin" && $email=="admin@yahoo.com"){
             header("Location: ../View/HTML/admin.html");

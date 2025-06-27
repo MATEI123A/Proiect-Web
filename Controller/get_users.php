@@ -5,16 +5,11 @@ function users(){
     $password = "";     
     $dbname = "utilizator";
 
-    $conn = mysqli_connect($servername, $username, $password);
+    $conn = mysqli_connect($servername, $username, $password,$dbname);
     if (!$conn) 
         die("Connection error: " . mysqli_connect_error());
 
-    $sql = "CREATE DATABASE IF NOT EXISTS utilizator";
-    mysqli_query($conn, $sql);
-
-    mysqli_select_db($conn, $dbname); 
-
-    $sql = "SELECT username from user WHERE username NOT LIKE 'Admin'";
+    $sql = "SELECT username from user WHERE BINARY username NOT LIKE 'Admin'";
     $result = $conn->query($sql);
     $users=[];
 

@@ -4,21 +4,16 @@ $username = "root";
 $password = "";     
 $dbname = "utilizator";
 
-$conn = mysqli_connect($servername, $username, $password);
+$conn = mysqli_connect($servername, $username, $password,$dbname);
 if (!$conn) 
     die("Connection error: " . mysqli_connect_error());
-
-$sql = "CREATE DATABASE IF NOT EXISTS utilizator";
-mysqli_query($conn, $sql);
-
-mysqli_select_db($conn, $dbname); 
 
 $user=$_COOKIE["username"];
 
 if (isset($_POST['height'],$_POST['weight'],$_POST['preference'])) {
     $height = (int)$_POST['height'];
     $weight = (int)$_POST['weight'];
-    $preference = (trim)$_POST['preference'];
+    $preference = trim($_POST['preference']);
   
     if($height<160){
          header("Location: ../View/HTML/admin.html?status=underheight");
@@ -51,7 +46,7 @@ if (isset($_POST['height'],$_POST['weight'],$_POST['preference'])) {
                                 }
                             }
 
-        $stmt = $conn->prepare("UPDATE details SET height = ?, weight = ?, preferences = ? WHERE username = ?");
+        $stmt = $conn->prepare("UPDATE details SET height = ?, weight = ?, preferences = ? WHERE BINARY username = ?");
         $stmt->bind_param("iiss",$height, $weight,$preference,$user);
         $stmt->execute();
         $stmt->close();

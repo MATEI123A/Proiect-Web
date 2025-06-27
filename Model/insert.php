@@ -4,14 +4,9 @@ $username = "root";
 $password = "";     
 $dbname = "utilizator";
 
-$conn = mysqli_connect($servername, $username, $password);
+$conn = mysqli_connect($servername, $username, $password,$dbname);
 if (!$conn) 
     die("Connection error: " . mysqli_connect_error());
-
-$sql = "CREATE DATABASE IF NOT EXISTS utilizator";
-mysqli_query($conn, $sql);
-
-mysqli_select_db($conn, $dbname); 
 
 if (isset($_POST['username'], $_POST['email'], $_POST['password'])) {
     $user = trim($_POST['username']);
@@ -19,12 +14,12 @@ if (isset($_POST['username'], $_POST['email'], $_POST['password'])) {
     $password = trim($_POST['password']);
     $status = 1;
 
-    $check_user = $conn->prepare("SELECT username FROM user WHERE username = ?");
+    $check_user = $conn->prepare("SELECT username FROM user WHERE BINARY username = ?");
     $check_user->bind_param("s", $user);
     $check_user->execute();
     $check_user->store_result();
    
-    $check_email = $conn->prepare("SELECT email FROM user WHERE email = ?");
+    $check_email = $conn->prepare("SELECT email FROM user WHERE BINARY email = ?");
     $check_email->bind_param("s", $email);
     $check_email->execute();
     $check_email->store_result();

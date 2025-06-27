@@ -6,21 +6,19 @@ function point(){
     $password = "";     
     $dbname = "utilizator";
 
-    $conn = mysqli_connect($servername, $username, $password);
+    $conn = mysqli_connect($servername, $username, $password,$dbname);
     if (!$conn) 
         die("Connection error: " . mysqli_connect_error());
 
-    $sql = "CREATE DATABASE IF NOT EXISTS utilizator";
-    mysqli_query($conn, $sql);
-
-    mysqli_select_db($conn, $dbname); 
     $users=[];
 
     if($_COOKIE["points"]=="total_points"){
         $sql = "SELECT username, total_points FROM user_points
                 WHERE username NOT LIKE 'Admin' ORDER BY total_points DESC";
 
-        $result = $conn->query($sql);
+        $stmt=$conn->prepare($sql);
+        $stmt->execute();
+        $result = $stmt->get_result();
 
         if ($result->num_rows > 0) 
         {
@@ -42,7 +40,9 @@ function point(){
                         WHERE username NOT LIKE 'Admin' AND pull_points > 0
                         ORDER BY pull_points DESC";
 
-                $result = $conn->query($sql);
+                  $stmt=$conn->prepare($sql);
+                  $stmt->execute();
+                  $result = $stmt->get_result();
 
                 if ($result->num_rows > 0) {
                     while ($row = $result->fetch_assoc()) {
@@ -65,7 +65,9 @@ function point(){
                                 WHERE username NOT LIKE 'Admin' AND push_points > 0
                                 ORDER BY push_points DESC";
 
-                        $result = $conn->query($sql);
+                          $stmt=$conn->prepare($sql);
+                          $stmt->execute();
+                          $result = $stmt->get_result();
 
                         if ($result->num_rows > 0) {
                             while ($row = $result->fetch_assoc()) {
@@ -88,7 +90,9 @@ function point(){
                                         WHERE username NOT LIKE 'Admin' AND abs_points > 0
                                         ORDER BY abs_points DESC";
 
-                                $result = $conn->query($sql);
+                                  $stmt=$conn->prepare($sql);
+                                  $stmt->execute();
+                                  $result = $stmt->get_result();
 
                                 if ($result->num_rows > 0) {
                                     while ($row = $result->fetch_assoc()) {
@@ -112,7 +116,9 @@ function point(){
                                             WHERE username NOT LIKE 'Admin' AND legs_points > 0
                                             ORDER BY legs_points DESC";
 
-                                    $result = $conn->query($sql);
+                                      $stmt=$conn->prepare($sql);
+                                      $stmt->execute();
+                                      $result = $stmt->get_result();
 
                                     if ($result->num_rows > 0) {
                                         while ($row = $result->fetch_assoc()) {
@@ -140,7 +146,10 @@ function point(){
 
                                     $sql = "SELECT username, total_points FROM user_points
                                             WHERE username NOT LIKE 'Admin' ORDER BY total_points DESC";
-                                    $result = $conn->query($sql);
+                                    
+                                      $stmt=$conn->prepare($sql);
+                                      $stmt->execute();
+                                      $result = $stmt->get_result();
 
                                     if ($result->num_rows > 0) {
                                         $pdf->SetFont('Arial', '', 12); 
@@ -161,7 +170,9 @@ function point(){
                                                 $sql="SELECT username,total_points FROM user_points
                                                 WHERE username NOT LIKE 'Admin' ORDER BY total_points DESC";
 
-                                                $result=$conn->query($sql);
+                                                $stmt=$conn->prepare($sql);
+                                                $stmt->execute();
+                                                $result = $stmt->get_result();
 
                                                 if($result->num_rows > 0){
                                                     while($row = $result->fetch_assoc()){
@@ -181,7 +192,9 @@ function point(){
                                                $sql = "SELECT username,total_points FROM user_points 
                                                WHERE username NOT LIKE 'Admin' ORDER BY total_points DESC";
 
-                                               $result = $conn->query($sql);
+                                                 $stmt=$conn->prepare($sql);
+                                                 $stmt->execute();
+                                                 $result = $stmt->get_result();
 
                                                if($result->num_rows > 0){
                                                     while($row = $result->fetch_assoc()){

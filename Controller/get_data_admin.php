@@ -4,14 +4,9 @@ $username = "root";
 $password = "";     
 $dbname = "utilizator";
 
-$conn = mysqli_connect($servername, $username, $password);
+$conn = mysqli_connect($servername, $username, $password,$dbname);
 if (!$conn) 
     die("Connection error: " . mysqli_connect_error());
-
-$sql = "CREATE DATABASE IF NOT EXISTS utilizator";
-mysqli_query($conn, $sql);
-
-mysqli_select_db($conn, $dbname); 
 
 $user=$_COOKIE["username"];
 
@@ -26,7 +21,7 @@ if ($row = $result->fetch_assoc()){
     $email = $row['email'];
 }
 
-$sql = "SELECT weight,height FROM details WHERE username = ?";
+$sql = "SELECT weight,height FROM details WHERE BINARY username = ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("s", $user);
 $stmt->execute();

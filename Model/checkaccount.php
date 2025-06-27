@@ -4,14 +4,9 @@ $username = "root";
 $password = "";     
 $dbname = "utilizator";
 
-$conn = mysqli_connect($servername, $username, $password);
+$conn = mysqli_connect($servername, $username, $password,$dbname);
 if (!$conn) 
     die("Connection error: " . mysqli_connect_error());
-
-$sql = "CREATE DATABASE IF NOT EXISTS utilizator";
-mysqli_query($conn, $sql);
-
-mysqli_select_db($conn, $dbname); 
 
 if (isset($_POST['username'], $_POST['password'])) {
 
@@ -19,7 +14,7 @@ if (isset($_POST['username'], $_POST['password'])) {
     $password = trim($_POST['password']);
     $status = 1;
 
-    $check_data = $conn->prepare("SELECT password FROM user WHERE username = ?");
+    $check_data = $conn->prepare("SELECT password FROM user WHERE BINARY username = ?");
     $check_data->bind_param("s", $user);
     $check_data->execute();
     $result_data = $check_data->get_result();
@@ -30,7 +25,7 @@ if (isset($_POST['username'], $_POST['password'])) {
 
         if (password_verify($password, $hashed_password)) {
 
-            $stmt = $conn->prepare("UPDATE user SET status = ? WHERE username = ?");
+            $stmt = $conn->prepare("UPDATE user SET status = ? WHERE BINARY username = ?");
             $stmt->bind_param("is", $status, $user);
             $stmt->execute();
             setcookie("username",$user,time()+(86400*30),"/");

@@ -8,7 +8,7 @@
 
 <form method="POST" action="../../Model/insert.php">
     <label for="username" style="color: #FFFFFF;"><strong>Username</strong></label>
-    <input type="text" id="username" name="username" 
+    <input type="text" id="username" name="username"  pattern="[A-Za-z]{4,20}" title="Please use only characters and the length is minimum 4!"
     style="background-color: #2b3530;border:0px;color:#FFFFFF;font-weight: bold;" required>
 
     <label for="email" style="color: #FFFFFF;"><strong>Email</strong></label>
@@ -16,7 +16,7 @@
     style="background-color: #2b3530;border:0px;color:#FFFFFF;font-weight: bold;" required>
 
     <label for="password" style="color: #FFFFFF;"><strong>Password</strong></label>
-    <input type="password" id="password" name="password"
+    <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{4,20}" title="Please use characters and numbers.The length is minimum 4!"
     style="background-color: #2b3530;border:0px;color:#FFFFFF;font-weight: bold;" required>
 
     <button type="submit">Next</button>

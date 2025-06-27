@@ -12,7 +12,7 @@ function exercices() {
 				document.getElementById("welcome").innerHTML="";		
 	}
 
-	function clasament() {
+		function clasament() {
             fetch('../HTML/clasament.html?v='+ Date.now())
                 .then(response => response.text())        
                 .then(html => document.getElementById('mainpage').innerHTML = html); 

@@ -6,14 +6,10 @@ function point(){
     $password = "";     
     $dbname = "utilizator";
 
-    $conn = mysqli_connect($servername, $username, $password);
+    $conn = mysqli_connect($servername, $username, $password,$dbname);
     if (!$conn) 
         die("Connection error: " . mysqli_connect_error());
 
-    $sql = "CREATE DATABASE IF NOT EXISTS utilizator";
-    mysqli_query($conn, $sql);
-
-    mysqli_select_db($conn, $dbname); 
     $users=[];
 
     $sql = "SELECT username FROM user WHERE status=1";
@@ -28,7 +24,7 @@ function point(){
 
     if($group == "pull"){
         $stmt = $conn->prepare("UPDATE user_points SET total_points = total_points + 10
-        , pull_points = pull_points + 10, count = count + 1 WHERE username = ?");
+        , pull_points = pull_points + 10, count = count + 1 WHERE BINARY username = ?");
         $stmt->bind_param("s",$user);
         $stmt->execute();
         $stmt->close();
@@ -36,7 +32,7 @@ function point(){
 
     if($group == "push"){
         $stmt = $conn->prepare("UPDATE user_points SET total_points = total_points + 10
-        , push_points = push_points + 10, count = count + 1 WHERE username = ?");
+        , push_points = push_points + 10, count = count + 1 WHERE BINARY username = ?");
         $stmt->bind_param("s",$user);
         $stmt->execute();
         $stmt->close();
@@ -44,7 +40,7 @@ function point(){
 
     if($group == "legs"){
         $stmt = $conn->prepare("UPDATE user_points SET total_points = total_points + 10
-        , legs_points = legs_points + 10, count = count + 1 WHERE username = ?");
+        , legs_points = legs_points + 10, count = count + 1 WHERE BINARY username = ?");
         $stmt->bind_param("s",$user);
         $stmt->execute();
         $stmt->close();
@@ -52,7 +48,7 @@ function point(){
 
      if($group == "abs"){
         $stmt = $conn->prepare("UPDATE user_points SET total_points = total_points + 10
-        , abs_points = abs_points + 10, count = count + 1 WHERE username = ?");
+        , abs_points = abs_points + 10, count = count + 1 WHERE BINARY username = ?");
         $stmt->bind_param("s",$user);
         $stmt->execute();
         $stmt->close();

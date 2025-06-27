@@ -4,14 +4,9 @@ $username = "root";
 $password = "";     
 $dbname = "utilizator";
 
-$conn = mysqli_connect($servername, $username, $password);
+$conn = mysqli_connect($servername, $username, $password,$dbname);
 if (!$conn) 
     die("Connection error: " . mysqli_connect_error());
-
-$sql = "CREATE DATABASE IF NOT EXISTS utilizator";
-mysqli_query($conn, $sql);
-
-mysqli_select_db($conn, $dbname); 
 
 $sql = "SELECT username FROM user WHERE status = 1";
 $stmt = $conn->prepare($sql);
@@ -21,7 +16,7 @@ $result = $stmt->get_result();
 if ($row = $result->fetch_assoc()) 
     $user = $row['username'];
 
-$sql = "SELECT weight,height,birthday,gender,health,preferences FROM details WHERE username = ?";
+$sql = "SELECT weight,height,birthday,gender,health,preferences FROM details WHERE BINARY username = ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("s", $user);
 $stmt->execute();
@@ -47,5 +42,4 @@ $data = array(
 
 echo json_encode($data);
 $conn->close();
-
 ?>
